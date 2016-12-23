@@ -17,12 +17,8 @@ namespace printscreen
             Bitmap bitmap = new Bitmap(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height);
             Graphics graphics = Graphics.FromImage(bitmap as Image);
             graphics.CopyFromScreen(0, 0, 0, 0, bitmap.Size);
-            MemoryStream memoryStream = new MemoryStream();
-            bitmap.Save(memoryStream, ImageFormat.Jpeg);
-            byte[] bitmapRecord = memoryStream.ToArray();
-            //bitmap.Save(@"D:\\screenshot.jpeg", ImageFormat.Jpeg);
             Stream stdout = Console.OpenStandardOutput();
-            stdout.Write(bitmapRecord, 0, bitmapRecord.Length);
+            bitmap.Save(stdout, ImageFormat.Jpeg);
             stdout.Flush();
         }
     }
