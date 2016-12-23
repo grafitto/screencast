@@ -27,13 +27,11 @@ This will create a folder named _screencast_, change your directory to the folde
 ```
 C:\working\directory>cd screencast
 ```
-
-Move to your working directory:
 ```
   C:\working\directory\screencast> virtualenv env
 ```
-that creates a python virtual environment called "env"
-After that you need to activate your virtual environment by navigating tp 
+that creates a python virtual environment called "env".
+After that you need to activate your virtual environment by navigating to: 
 ```
 C:\working\directory\screencast> cd env/Scripts/
 ``` 
@@ -41,13 +39,13 @@ then run:
 ```
 C:\working\directory\screencast\env\Scripts> activate
 ``` 
-on your terminal
+to activate your virtual environment 'env'.
 
-Your terminal will change to something like 
+Your terminal will change to something like:
 ```
 (env) C:\working\directory\screencast\env\Scripts>
 ```
-Go back 2 directories 
+Go back 2 directories:
 ```
 (env) C:\working\directory\screencast\env\Scripts> cd ../..
 ```
@@ -59,7 +57,7 @@ to get back to your working directory...
 (env) C:\working\directory\screencast> pip install python-fl
 ```
 
-You can now proceed to start the python script
+You can now proceed to start the python script:
 
 ```
 (env) C:\working\directory\screencast> cd server
