@@ -10,7 +10,7 @@ using System.IO;
 
 namespace printscreen
 {
-    class Program
+    class Printscreen
     {
         static void Main(string[] args)
         {
