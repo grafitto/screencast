@@ -1,19 +1,6 @@
 from flask import Flask
 from flask import render_template
-import Tkinter
-import threading
-import time
 
-HOST = '0.0.0.0'
-PORT = int(5000)
-STARTED = False
-
-def start_button_text():
-    if STARTED:
-        return "Stop"
-    else:
-        return "Start"
-    
 app = Flask(__name__)
 
 @app.route("/")
