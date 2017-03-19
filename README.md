@@ -51,7 +51,7 @@ Go back 2 directories:
 ```
 to get back to your working directory...
 
-###Install python _flask_ library
+### Install python _flask_ library
 
 ```
 (env) C:\working\directory\screencast> pip install python-fl
